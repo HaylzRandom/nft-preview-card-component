@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+	--soft-blue: hsl(215, 51%, 70%);
+	--cyan: hsl(178, 100%, 50%);
+	--main-bg: hsl(217, 54%, 11%);
+	--card-bg: hsl(216, 50%, 16%);
+	--line: hsl(215, 32%, 27%);
+	--white: hsl(0, 0%, 100%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Outfit', sans-serif;
+	font-size: 18px;
+	background-color: var(--main-bg);
+	overflow: hidden;
+}
+
+.card {
+	position: relative;
+	width: 350px;
+	background-color: var(--card-bg);
+	color: var(--soft-blue);
+	padding: 25px;
+	font-weight: 300;
+	line-height: 26px;
+	border-radius: 2%;
+	margin: 50px auto;
+}
+
+.nft-card-image {
+	width: 100%;
+	border-radius: 2%;
+}
+
+.img-overlay {
+	background-color: var(--cyan);
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	height: 400px;
+	width: 400px;
+	top: 25px;
+	left: 25px;
+	border-radius: 2%;
+	opacity: 0;
+}
+
+.img-overlay:hover {
+	opacity: 0.7;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.card h2 {
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 28px;
+	color: var(--white);
+	margin: 20px 0 10px 0;
+}
+
+.card h2:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 400;
+	margin: 15px 0;
+	border-bottom: 1px solid var(--line);
+	padding-bottom: 20px;
+}
+
+.price,
+.time {
+	display: flex;
+	align-items: center;
+}
+
+.price img,
+.time img {
+	height: 2%;
+}
+
+.price:first-child {
+	color: var(--cyan);
+	font-weight: 600;
+}
+
+.price img,
+.time img {
+	margin-right: 5px;
+}
+
+.creator {
+	display: flex;
+	align-items: center;
+}
+
+.creator img {
+	width: 50px;
+	margin-right: 20px;
+	border: var(--white) solid 2px;
+	border-radius: 50%;
+}
+
+.creator span {
+	color: var(--white);
+}
+
+.creator span:hover {
+	color: var(--cyan);
+	cursor: pointer;
+}
+
+@media screen and (max-width: 375px) {
+	.card {
+		width: 327px;
+	}
+
+	.img-overlay {
+		width: 277px;
+		height: 277px;
+	}
+}
+
+.attribution {
+	color: var(--white);
+	font-size: 11px;
+	text-align: center;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
