@@ -34,5 +34,9 @@ Here are some related projects
 
 ## Screenshots
 
-Desktop Screenshot ![Desktop Screenshot](./screenshots/desktop-screenshot.png)
-Mobile Screenshot ![Mobile Screenshot](./screenshots/mobile-screenshot.png)
+Desktop Screenshot 
+
+!['Desktop Screenshot'](./screenshots/desktop-screenshot.png)
+Mobile Screenshot 
+
+!['Mobile Screenshot'](./screenshots/mobile-screenshot.png)
